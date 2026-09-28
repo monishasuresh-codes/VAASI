@@ -1,0 +1,654 @@
+.read-page {
+    min-height: 100vh;
+     background: linear-gradient(
+        135deg,
+        #f3eee6,
+        #e8dfd3
+    );
+    color: #2d2926;
+}
+
+/* Read Books Hero */
+
+.read-hero {
+  
+    padding: 70px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f3eee6,
+        #e8dfd3
+    );
+}
+
+.read-subtitle {
+    margin-bottom: 18px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    opacity: 0.7;
+}
+
+.read-hero h1 {
+    margin: 0 0 20px;
+
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.read-description {
+    max-width: 550px;
+
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    opacity: 0.75;
+}
+
+
+
+.read-search-section {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 70px;
+
+    
+}
+
+.read-search {
+    width: 100%;
+    
+
+    display: flex;
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #C89A5B;
+    border-radius: 50px;
+
+    padding: 5px;
+
+    box-shadow: 0 8px 25px rgba(30, 61, 47, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.read-search:focus-within {
+    border-color: #6CBF6A;
+
+    box-shadow: 0 8px 30px rgba(108, 191, 106, 0.18);
+}
+
+.read-search input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 14px 20px;
+
+    background: transparent;
+
+    color: #1C1E3A;
+
+    font-size: 14px;
+}
+
+.read-search input::placeholder {
+    color: #8a8c86;
+}
+
+.read-search button {
+    border: none;
+
+    padding: 13px 27px;
+
+    background-color: #1E3D2F;
+    color: #F7F3E9;
+
+    border-radius: 40px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.read-search button:hover {
+    background-color: #6CBF6A;
+    color: #1E3D2F;
+
+    transform: translateY(-1px);
+}
+
+.read-categories {
+    text-align: center;
+    padding: 10px 20px 45px;
+}
+
+.category-label {
+    margin-bottom: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 20px;
+
+    color: #C89A5B;
+}
+
+.genre-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.genre-buttons button {
+    padding: 10px 22px;
+
+    border: 1px solid #C89A5B;
+    border-radius: 30px;
+
+    background-color: transparent;
+
+    color: #1E3D2F;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.genre-buttons button:hover {
+    background-color: #FFE9D1;
+    border-color: #6CBF6A;
+
+    transform: translateY(-2px);
+}
+
+.genre-buttons button.active {
+    background-color: #1E3D2F;
+    border-color: #1E3D2F;
+
+    color: #F7F3E9;
+}
+
+.free-books {
+    padding: 10px 6% 50px;
+   
+}
+
+.free-books-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.free-books-label {
+    margin: 0 0 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: #C89A5B;
+}
+
+.free-books-heading h2 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 500;
+
+    color: #1C1E3A;
+}
+
+.free-books-heading span {
+    font-size: 13px;
+    color: #1E3D2F;
+}
+
+.free-books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+    margin-top: 40px;
+}
+
+.read-book-card {
+    display: flex;
+    gap: 20px;
+
+    padding: 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid rgba(200, 154, 91, 0.25);
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.read-book-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(30, 61, 47, 0.10);
+}
+
+.read-book-cover {
+    width: 120px;
+    min-width: 120px;
+    height: 175px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.read-book-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.read-book-card:hover .read-book-cover img {
+    transform: scale(1.04);
+}
+
+.read-book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 5px 0;
+}
+
+.read-book-genre {
+    margin: 0 0 10px;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    color: #C89A5B;
+}
+
+.read-book-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 500;
+
+    color: #1C1E3A;
+}
+
+.read-book-info span {
+    font-size: 13px;
+
+    color: #1E3D2F;
+}
+
+.read-book-info button {
+    margin-top: auto;
+
+    padding: 9px 18px;
+
+    border: 1px solid #1E3D2F;
+    border-radius: 25px;
+
+    background-color: transparent;
+
+    color: #1E3D2F;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.read-book-info button:hover {
+    background-color: #1E3D2F;
+    color: #F7F3E9;
+}
+/* ============================= */
+/* TABLET VIEW */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .read-hero {
+        padding: 60px 30px;
+    }
+
+    .read-hero h1 {
+        font-size: 45px;
+    }
+
+    .read-description {
+        max-width: 500px;
+        font-size: 16px;
+    }
+
+    /* Search */
+
+    .read-search-section {
+        padding: 50px 30px 0;
+    }
+
+    .read-search {
+        max-width: 650px;
+    }
+
+    /* Categories */
+
+    .read-categories {
+        padding: 10px 30px 40px;
+    }
+
+    .genre-buttons {
+        gap: 10px;
+    }
+
+    .genre-buttons button {
+        padding: 9px 18px;
+    }
+
+    /* Free Books Heading */
+
+    .free-books {
+        padding: 10px 5% 40px;
+    }
+
+    .free-books-heading {
+        align-items: flex-start;
+    }
+
+    .free-books-heading h2 {
+        font-size: 28px;
+    }
+
+    /* Books Grid */
+
+    .free-books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    /* Book Card */
+
+    .read-book-card {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .read-book-cover {
+        width: 100px;
+        min-width: 100px;
+        height: 150px;
+    }
+
+    .read-book-info h3 {
+        font-size: 16px;
+    }
+
+    .read-book-info span {
+        font-size: 12px;
+    }
+
+    .read-book-info button {
+        padding: 8px 15px;
+        font-size: 11px;
+    }
+}
+
+
+/* ============================= */
+/* MOBILE VIEW */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .read-page {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Hero */
+
+    .read-hero {
+        min-height: auto;
+        padding: 45px 18px 35px;
+    }
+
+    .read-subtitle {
+        margin-bottom: 14px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .read-hero h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .read-description {
+        max-width: 340px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Search */
+
+    .read-search-section {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 35px 18px 0;
+    }
+
+    .read-search {
+        width: 100%;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+
+    .read-search input {
+        min-width: 0;
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    .read-search button {
+        padding: 11px 17px;
+        font-size: 11px;
+    }
+
+    /* Categories */
+
+    .read-categories {
+        padding: 10px 18px 35px;
+    }
+
+    .category-label {
+        padding-top: 15px;
+        margin-bottom: 16px;
+        font-size: 10px;
+    }
+
+    .genre-buttons {
+        gap: 8px;
+    }
+
+    .genre-buttons button {
+        padding: 8px 15px;
+        font-size: 11px;
+    }
+
+    /* Free Books Heading */
+
+    .free-books {
+        padding: 10px 18px 25px;
+    }
+
+    .free-books-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .free-books-label {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .free-books-heading h2 {
+        font-size: 26px;
+    }
+
+    .free-books-heading span {
+        font-size: 12px;
+    }
+
+    /* Books Grid */
+
+    .free-books-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 25px;
+    }
+
+    /* Book Card */
+
+    .read-book-card {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 15px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .read-book-cover {
+        width: 100px;
+        min-width: 100px;
+        height: 145px;
+    }
+
+    .read-book-info {
+        padding: 3px 0;
+        min-width: 0;
+    }
+
+    .read-book-genre {
+        margin-bottom: 7px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .read-book-info h3 {
+        margin-bottom: 6px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .read-book-info span {
+        font-size: 11px;
+    }
+
+    .read-book-info button {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 400px) {
+
+    .read-hero {
+        padding: 40px 15px 30px;
+    }
+
+    .read-hero h1 {
+        font-size: 29px;
+    }
+
+    .read-description {
+        font-size: 13px;
+    }
+
+    .read-search-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .read-search input {
+        padding: 11px 12px;
+    }
+
+    .read-search button {
+        padding: 10px 14px;
+    }
+
+    .free-books {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .read-book-card {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .read-book-cover {
+        width: 85px;
+        min-width: 85px;
+        height: 125px;
+    }
+
+    .read-book-info h3 {
+        font-size: 14px;
+    }
+
+    .read-book-info span {
+        font-size: 10px;
+    }
+
+    .read-book-info button {
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+}

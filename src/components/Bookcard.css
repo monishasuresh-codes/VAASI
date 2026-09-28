@@ -1,0 +1,131 @@
+.book-card {
+    width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(30, 61, 50, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(30, 61, 50, 0.18);
+}
+
+/* Book Cover */
+
+.book-card > img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Book Information */
+
+.book-info {
+    padding: 10px;
+    text-align: center;
+}
+.book-genre{
+    padding-bottom: 5px;
+}
+.book-info h3 {
+    margin: 0 0 7px;
+    font-size: 19px;
+    color: #1E3D32;
+}
+
+.book-author {
+    margin: 0 0 9px;
+    font-size: 14px;
+    color: #7D9B83;
+}
+
+/* Rating and Price Row */
+
+.book-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 15px;
+}
+
+/* Rating */
+
+.book-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    color: #1E3D32;
+}
+
+.book-rating span:first-child {
+    font-size: 18px;
+    color: #C9A15B;
+    line-height: 1;
+}
+
+.book-rating span:last-child {
+    line-height: 1;
+    font-weight: 500;
+}
+
+/* Price */
+
+.book-price {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E3D32;
+}
+
+/* Button */
+
+.book-info button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1E3D32;
+    color: #F7F3E9;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-info button:hover {
+    background-color: #7D9B83;
+    transform: translateY(-2px);
+}
+.view-book{
+    color: white;
+    text-decoration: none;
+}
+/* Tablet */
+
+@media (max-width: 768px) {
+    .book-card {
+        width: 230px;
+    }
+
+    .book-card > img {
+        height: 280px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .book-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .book-card > img {
+        height: 350px;
+    }
+}

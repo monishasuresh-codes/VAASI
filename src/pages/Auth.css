@@ -1,0 +1,170 @@
+/* Full screen overlay */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+
+/* Popup */
+.auth-popup {
+    position: relative;
+
+    width: 420px;
+    max-width: 90%;
+
+    padding: 35px 30px;
+
+    background: #F7F3E9;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+    animation: authPopup 0.3s ease;
+}
+
+
+/* Popup animation */
+@keyframes authPopup {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Close button */
+.auth-close {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    color: #1E3D2F;
+
+    cursor: pointer;
+}
+
+
+/* Heading */
+.auth-popup h2 {
+    margin: 10px 0 12px;
+
+    color: #1E3D2F;
+
+    font-size: 26px;
+}
+
+
+/* Description */
+.auth-popup p {
+    margin: 0 auto 25px;
+
+    max-width: 320px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* Login + Signup buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+.auth-buttons button {
+    width: 130px;
+
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1E3D2F;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.auth-buttons button:hover {
+    background: #6CBF6A;
+    transform: translateY(-2px);
+}
+
+
+/* Maybe Later */
+.auth-skip {
+    border: none;
+    background: transparent;
+
+    color: #1E3D2F;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+
+.auth-skip:hover {
+    color: #6CBF6A;
+}
+
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .auth-popup {
+        width: 85%;
+        padding: 30px 20px;
+    }
+
+    .auth-popup h2 {
+        font-size: 22px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-buttons button {
+        width: 80%;
+    }
+}

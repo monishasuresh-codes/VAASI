@@ -1,0 +1,332 @@
+/* =========================================================
+   VAASI MY LIBRARY
+   Same visual language as the Physical Book Reader
+========================================================= */
+
+.library-page {
+    min-height: 100vh;
+    color: #2d2926;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #fbf7ee 0%,
+            #f3eee6 45%,
+            #e8decb 100%
+        );
+}
+
+
+/* =========================================================
+   LIBRARY HERO
+========================================================= */
+
+.library-hero {
+    min-height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fbf7ee 0%,
+            #ede3d3 65%,
+            #e2d6c2 100%
+        );
+
+    border-bottom: 1px solid rgba(200, 154, 91, 0.25);
+
+    box-shadow:
+        0 4px 18px rgba(30, 61, 47, 0.08);
+}
+
+
+.library-hero-content {
+    max-width: 720px;
+}
+
+
+/* Small Heading */
+
+.library-subtitle {
+    margin: 0 0 14px;
+
+    color: #C89A5B;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* Main Heading */
+
+.library-hero h1 {
+    margin: 0 0 18px;
+
+    color: #1E3D2F;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Description */
+
+.library-hero p:last-child {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #694d3e;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LIBRARY SECTION
+========================================================= */
+
+.library-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 30px;
+}
+
+
+/* Section Heading */
+
+.library-section-heading {
+    margin-bottom: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-label {
+    margin: 0 0 8px;
+
+    color: #C89A5B;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+.library-section-heading h2 {
+    margin: 0;
+
+    color: #1E3D2F;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BOOK GRID
+========================================================= */
+
+.library-book-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   EMPTY LIBRARY
+========================================================= */
+
+.empty-library {
+    padding: 65px 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.75),
+            rgba(247, 243, 233, 0.8)
+        );
+
+    border: 1px solid rgba(200, 154, 91, 0.3);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(30, 61, 47, 0.08);
+}
+
+
+.empty-library h3 {
+    margin: 0 0 10px;
+
+    color: #1E3D2F;
+
+    font-size: 20px;
+}
+
+
+.empty-library p {
+    margin: 0;
+
+    color: #694d3e;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .library-hero {
+        min-height: 300px;
+
+        padding: 60px 20px;
+    }
+
+
+    .library-hero h1 {
+        font-size: 44px;
+    }
+
+
+    .library-book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .library-hero {
+        min-height: 280px;
+
+        padding: 55px 20px;
+    }
+
+
+    .library-subtitle {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .library-hero h1 {
+        font-size: 36px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .library-hero p:last-child {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .library-section {
+        padding: 30px 10px;
+    }
+
+
+    .library-section-heading h2 {
+        font-size: 27px;
+    }
+
+
+    .library-book-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+}
+/* =========================================================
+   READING INFO SPACING
+========================================================= */
+
+.library-book-grid .read-book-info span {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.library-book-grid .reading-page {
+    margin: 0 0 12px;
+
+    color: #1C1E3A;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+/* =========================================================
+   READING PROGRESS BAR
+========================================================= */
+
+.library-book-grid .reading-progress {
+    margin-bottom: 8px;
+}
+
+
+.library-book-grid .reading-progress-bar {
+    width: 100%;
+    height: 7px;
+
+    background: #e2d6c2;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.library-book-grid .reading-progress-fill {
+    height: 100%;
+
+    background: #C89A5B;
+
+    border-radius: 10px;
+
+    transition: width 0.4s ease;
+}
+
+
+.library-book-grid .reading-progress-text {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #694d3e;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+

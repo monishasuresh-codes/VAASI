@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+    position: relative;
+}
+
+.nav-logo {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    color: #1E3D32;
+    gap: 25px;
+    font-size: 27px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1E3D32;
+
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+.menu-btn {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d8cdbb;
+    border-radius: 10px;
+    background: #F7F3E9;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1E3D32;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+
+    .nav-logo {
+        width: 130px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .nav-actions {
+        gap: 18px;
+    }
+
+    .icon {
+        width: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 5%;
+    }
+
+    .menu-btn {
+        display: block;
+        order: 1;
+    }
+
+    .nav-logo {
+        width: 100px;
+        order: 2;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions {
+        order: 3;
+        gap: 15px;
+    }
+
+    .icon {
+        width: 28px;
+    }
+
+   .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+  
+}
+.nav-auth-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-auth-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.nav-login {
+    color:white;
+    border: 3px solid #1E3D32;
+}
+
+.nav-login:hover {
+    background: #1E3D32;
+    color:white;
+}

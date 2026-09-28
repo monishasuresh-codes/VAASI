@@ -1,0 +1,352 @@
+.signup-page {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: #F7F3E9;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 45px;
+
+    box-shadow: 0 10px 35px rgba(30, 61, 47, 0.12);
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signup-header h1 {
+    margin: 0 0 10px;
+
+    color: #1E3D2F;
+
+    font-size: 32px;
+}
+
+.signup-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+.signup-section {
+    margin-bottom: 35px;
+}
+
+.signup-section h2 {
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e5dfd2;
+
+    color: #1E3D2F;
+
+    font-size: 20px;
+}
+
+
+.signup-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.signup-field {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.signup-field label {
+    margin-bottom: 8px;
+
+    color: #1E3D2F;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.signup-field input,
+.signup-field textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d8d0c2;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #333;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.signup-field input:focus,
+.signup-field textarea:focus {
+    border-color: #6CBF6A;
+
+    box-shadow: 0 0 0 3px rgba(108, 191, 106, 0.12);
+}
+
+.signup-field textarea {
+    resize: vertical;
+}
+
+
+/* Genre buttons */
+
+.genre-options {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.genre-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 14px;
+
+    border: 1px solid #d8d0c2;
+
+    border-radius: 20px;
+
+    color: #555;
+
+    background: #fff;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+.genre-option input {
+    display: none;
+}
+
+.genre-option.selected {
+    border-color: #1E3D2F;
+
+    background: #1E3D2F;
+
+    color: white;
+}
+
+.genre-option:hover {
+    border-color: #6CBF6A;
+}
+
+
+/* Create account button */
+
+.signup-submit {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1E3D2F;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.signup-submit:hover {
+    background: #6CBF6A;
+
+    transform: translateY(-1px);
+}
+
+
+/* Login link */
+
+.login-link {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.login-link span {
+    color: #1E3D2F;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-link span:hover {
+    color: #6CBF6A;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .signup-page {
+        padding: 30px 15px;
+    }
+
+    .signup-container {
+        padding: 30px 20px;
+    }
+
+    .signup-header h1 {
+        font-size: 25px;
+    }
+
+    .signup-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .genre-options {
+        gap: 8px;
+    }
+}
+
+.profile-edit-form {
+    width: 100%;
+}
+
+.profile-edit-form h2 {
+    margin: 0 0 30px;
+    color: #1E3D2F;
+    font-size: 25px;
+}
+
+.profile-edit-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.profile-edit-field label {
+    margin-bottom: 8px;
+    color: #1E3D2F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-edit-field input,
+.profile-edit-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d8d0c2;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.profile-edit-field textarea {
+    resize: vertical;
+}
+
+.profile-edit-field input:focus,
+.profile-edit-field textarea:focus {
+    border-color: #6CBF6A;
+    box-shadow: 0 0 0 3px rgba(108, 191, 106, 0.12);
+}
+
+.profile-edit-field input:disabled {
+    background: #f0ede6;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.profile-edit-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.profile-edit-actions button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-save {
+    background: #1E3D2F;
+    color: white;
+}
+
+.profile-save:hover {
+    background: #6CBF6A;
+}
+
+.profile-cancel {
+    background: #FFE9D1;
+    color: #694d3e;
+}
+
+.profile-cancel:hover {
+    background: #e8c99e;
+}
+
+@media (max-width: 600px) {
+
+    .profile-edit-actions {
+        flex-direction: column;
+    }
+
+    .profile-edit-actions button {
+        width: 100%;
+    }
+}
