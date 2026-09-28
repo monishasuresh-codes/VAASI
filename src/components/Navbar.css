@@ -90,7 +90,7 @@
     }
 
     .nav-logo {
-        width: 100px;
+        width: 90px;
         order: 2;
     }
 
@@ -100,11 +100,11 @@
 
     .nav-actions {
         order: 3;
-        gap: 15px;
+        gap: 10px;
     }
 
     .icon {
-        width: 28px;
+        width: 25px;
     }
 
    .mobile-menu {
